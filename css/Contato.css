@@ -1,0 +1,43 @@
+
+body {
+    background-color: #747474;
+  }
+  
+  h1 {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  p {
+    font-family: #ffffff;
+    font-size: 20px;
+  }
+  
+  body {
+   
+    background-image: url(../Imagens/sukunaL.jpg);
+    background-repeat: no-repeat no-repeat;
+  
+  background-position: 45% -400%;
+ 
+    text-shadow: rgb(0, 0, 0) 0px 0px 2px;
+    font-size: 16px;
+    background-size: 500px;
+    
+     }
+
+     #Diferenciais{  
+      background-color: lightblue;
+      color: black;
+      padding: 40px;
+      text-align: center;}
+
+      p:first-letter { font-weight: bold; }
+
+      h1 + p { text-indent: 0;}
+
+      h1 + p { text-indent: 0;}
+
+      :not(p) + p:first-line { font-variant: small-caps; }
+
+      

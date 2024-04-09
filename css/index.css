@@ -1,0 +1,232 @@
+.carrinho{
+    background: url("../Imagens/carrinhoJ.jpg") no-repeat top right;
+    background-size: contain;
+    font-size: 14px;
+    padding-right: 35px; 
+    text-align: right; 
+    width: 140px;
+   position:absolute;
+   top: 0;
+   right: 0;
+
+    }
+
+
+header{
+position: relative;
+}
+
+.menu-opcoes a { 
+color: #003366; 
+}
+
+body{
+color: #333333; 
+font-family: "Lucida Sans Unicoe", "Lucida Grande", sans-serif;
+}
+
+.p1 { 
+border: 1px solid rgb(156, 156, 156);
+}
+
+.menu-opcoes ul li {
+display: inline; 
+margin-left: 20px;
+}
+
+
+
+.container{ 
+margin: 0 auto; 
+width: 940px; 
+}
+
+.menu-opcoes { 
+position: absolute; 
+bottom: 5; 
+right: 0;
+}
+
+.painel { 
+margin: 10px 0;
+padding: 10px;
+width: 35%;  
+}
+
+.aula1 { 
+float: left; 
+background-color: #f5dcdc; 
+border-radius: 4px;
+box-shadow: 1px 1px 4px #999;
+box-shadow: inset 1px 1px 4px #999;
+background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.aula2 { 
+float: right;
+background-color: #dcdcf5;
+border-radius: 4px;
+box-shadow: 1px 1px 4px #999;
+box-shadow: inset 1px 1px 4px #999;
+background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+.painel li { display: inline-block; 
+vertical-align: top; 
+width: 140px; margin: 2px; 
+padding-bottom: 10px; 
+text-shadow: 3px 3px 2px #FFF;
+
+}
+
+.painel li:hover{
+    box-shadow: 0 0 5px #333; 
+transition: box-shadow 0.7s; 
+background-color: rgba(255,255,255,0.8);  
+transition:
+0.7s;
+transform: scale(1.2) rotate(-5deg);
+}
+
+.painel h2 { font-size: 24px; 
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 10px; 
+text-shadow: 3px 3px 2px #FFF; 
+text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+} 
+
+.painel a { 
+color: #333;
+font-size: 14px;
+text-align: center;
+text-decoration: none;
+}
+
+.busca, .menu-conteudo {
+    background-color: #dcdcdc; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    margin-right: 10px;width: 230px;
+    float: left; 
+    margin-top: 10px; 
+    padding-bottom: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    }
+
+.busca h2, .busca form, .menu-conteudo h2 {
+    margin: 10px;
+    }
+
+.menu-conteudo li {
+    background-color: white; 
+    margin-bottom: 1px; 
+    padding: 5px 10px;
+    }
+
+.menu-conteudo a {
+    color: #333333; 
+    text-decoration: none;
+    }
+
+.menu-conteudo { 
+    clear: left; 
+}
+
+    
+.busca input { 
+    vertical-align: middle;
+}
+
+.busca input[type=search] {
+     width: 170px;
+    }
+
+
+.destaque { 
+    margin-top: 10px;
+ } 
+
+.lupa{
+    width: 20x;
+}
+
+footer{ 
+    clear: both; 
+    position:relative;
+    background-size: 50%;
+    padding: 20px 0;
+    background: linear-gradient(#f5dcdc, #bebef4);
+    border-radius: 4px; box-shadow: 1px 1px 4px #999;
+    box-shadow: inset 1px 1px 4px #999;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+}
+
+.social a[href*="facebook"] {
+    background-image: url(../Imagens/face.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    }
+
+.social a[href*="twitter"] {
+        background-image: url(../Imagens/twitter.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+      
+        }
+
+.social a[href*="google"] {
+         background-image: url(../Imagens/Google.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            }
+
+.facebook { 
+    height: 55px; 
+    width: 85px; 
+    background-image: url(../Imagens/face.png); 
+    background-repeat: no-repeat; 
+    background-size: contain;  
+    text-indent: -9999px; }
+
+.twitter { 
+    height: 55px; 
+    width: 85px; 
+    background-image: url(../Imagens/twitter.png); 
+    background-repeat: no-repeat; 
+    background-size: contain;  
+    text-indent: -9999px; 
+}
+
+.google { 
+    height: 55px; 
+    width: 85px; 
+    background-image: url(../Imagens/Google.png); 
+    background-repeat: no-repeat; 
+    background-size: contain;  
+    text-indent: -9999px; 
+}
+
+.logoBanner{
+    width: 30%;
+    height: 200px;
+}
+    
+.menu-opcoes a:hover { color: #007dc6;} .menu-opcoes a:active { color: 
+    #867dc6; }
+
+    .menu-conteudo li ul {
+        display: none; /*por padrão escondida*/
+       } 
+       .menu-conteudo li:hover ul {
+       display: block; /*no mouse aparece*/
+       } 
+       .menu-conteudo ul ul li {
+        background-color: #dcdcdc;
+        }
+    
+        .menu-conteudo li li a:before {content: '- ';}

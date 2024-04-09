@@ -1,0 +1,23 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.parte-colorida {
+    position: absolute;
+    top: 2%; 
+    left: 1%; 
+    width: 40%; 
+    height: 90%; 
+    background-color: #ff8d60; 
+    color: #fff; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: top; 
+    align-items: top;
+}
+
+
+
