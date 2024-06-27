@@ -51,6 +51,7 @@ right: 0;
 margin: 10px 0;
 padding: 10px;
 width: 35%;  
+height: 200px;
 }
 
 .aula1 { 
@@ -152,64 +153,45 @@ text-decoration: none;
     width: 20x;
 }
 
-footer{ 
-    clear: both; 
-    position:relative;
-    background-size: 50%;
-    padding: 20px 0;
+footer {  
     background: linear-gradient(#f5dcdc, #bebef4);
-    border-radius: 4px; box-shadow: 1px 1px 4px #999;
+    border-radius: 4px; 
     box-shadow: inset 1px 1px 4px #999;
     text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+    background-size: 50%;
+    clear: both;
+    padding: 20px 0;
+    height: 50px;
 }
-
-.social a[href*="facebook"] {
-    background-image: url(../Imagens/face.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+.social a {    /* tamanho da imagem */
+    height: 32px;
+    width: 32px;
+    /* image replacement */
+    display: block;
     text-indent: -9999px;
-    }
+}
+.social a[href*="facebook.com"] {    background-image: url(../Imagens/face.png);
+    background-size: contain;
+}
+.social a[href*="twitter.com"] {    background-image: url(../Imagens/twitter.png);
+    background-size: contain;
+}
+.social a[href*="plus.google.com"] {    background-image: url(../Imagens/Google.png);
+    background-size: contain;
+}   
+footer .container {    position: relative;}
 
-.social a[href*="twitter"] {
-        background-image: url(../Imagens/twitter.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        text-indent: -9999px;
-      
-        }
-
-.social a[href*="google"] {
-         background-image: url(../Imagens/Google.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            text-indent: -9999px;
-            }
-
-.facebook { 
-    height: 55px; 
-    width: 85px; 
-    background-image: url(../Imagens/face.png); 
-    background-repeat: no-repeat; 
-    background-size: contain;  
-    text-indent: -9999px; }
-
-.twitter { 
-    height: 55px; 
-    width: 85px; 
-    background-image: url(../Imagens/twitter.png); 
-    background-repeat: no-repeat; 
-    background-size: contain;  
-    text-indent: -9999px; 
+.social {    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.social li {    float: left;
+    margin-left: 25px;
+}
+.img-footer{    height: 50px;
+    width: 50px;
 }
 
-.google { 
-    height: 55px; 
-    width: 85px; 
-    background-image: url(../Imagens/Google.png); 
-    background-repeat: no-repeat; 
-    background-size: contain;  
-    text-indent: -9999px; 
-}
 
 .logoBanner{
     width: 30%;
