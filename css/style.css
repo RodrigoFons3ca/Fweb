@@ -1,120 +1,112 @@
-/* Importa a fonte do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
-/* Reset básico e definição da fonte para todo o documento */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Oxanium', cursive; /* Aplica a fonte Oxanium */
+  font-family: 'Oxanium', cursive;
 }
 
-/* Estilos para o corpo da página */
 body {
-  text-align: center; /* Centraliza o conteúdo horizontalmente */
-  background: linear-gradient(to bottom, #6ab7f5, #fff); /* Gradiente de fundo */
-  min-height: 100vh; /* Garante que a altura mínima seja a altura da viewport */
+  text-align: center;
+  background: linear-gradient(to bottom, #6ab7f5, #fff);
+  min-height: 100vh;
 }
 
-/* Estilos para a seção principal */
 main {
-  display: block; /* Usa display block para ocupar a largura disponível */
-  margin-top: 2%; /* Margem superior de 2% */
-  padding: 15px; /* Espaçamento interno */
-  position: relative; /* Posição relativa para elementos absolutos dentro */
+  display: inline-block;
+  margin-top: 2%;
+  padding: 15px;
+  position: relative;
 }
 
-/* Estilos para a imagem do Pokémon */
+.pokedex {
+  width: 100%;
+  max-width: 425px;
+}
+
 .pokemon__image {
-  position: absolute; /* Posicionamento absoluto */
-  bottom: 55%; /* Distância do fundo em relação ao viewport */
-  left: 50%; /* Alinhamento central */
-  transform: translate(-63%, 20%); /* Ajuste de posicionamento */
-  height: 18%; /* Tamanho da imagem em relação ao pai */
+  position: absolute;
+  bottom: 55%;
+  left: 50%;
+  transform: translate(-63%, 20%);
+  height: 18%;
 }
 
-/* Estilos para os dados do Pokémon */
 .pokemon__data {
-  position: absolute; /* Posicionamento absoluto */
-  font-weight: 600; /* Peso da fonte */
-  color: #aaa; /* Cor do texto */
-  top: 54%; /* Distância do topo em relação ao viewport */
-  right: 27%; /* Distância da direita em relação ao viewport */
-  font-size: clamp(8px, 5vw, 25px); /* Tamanho da fonte responsivo */
+  position: absolute;
+  font-weight: 600;
+  color: #aaa;
+  top: 54%;
+  right: 27%;
+  font-size: clamp(8px, 5vw, 25px);
 }
 
-/* Estilos para o nome do Pokémon */
 .pokemon__name {
-  color: #3a444d; /* Cor do texto */
-  text-transform: capitalize; /* Transforma texto para inicial maiúscula */
+  color: #3a444d;
+  text-transform: capitalize;
 }
 
-/* Estilos para o formulário de busca */
 .form {
-  position: absolute; /* Posicionamento absoluto */
-  width: 65%; /* Largura do formulário */
-  top: 65%; /* Distância do topo em relação ao viewport */
-  left: 13.5%; /* Distância da esquerda em relação ao viewport */
+  position: absolute;
+  width: 65%;
+  top: 65%;
+  left: 13.5%;
 }
 
 .input__search {
-  width: 100%; /* Largura total */
-  padding: 4%; /* Espaçamento interno */
-  outline: none; /* Remove o contorno ao focar */
-  border: 2px solid #333; /* Borda sólida */
-  border-radius: 5px; /* Borda arredondada */
-  font-weight: 600; /* Peso da fonte */
-  color: #3a444d; /* Cor do texto */
-  font-size: clamp(8px, 5vw, 1rem); /* Tamanho da fonte responsivo */
-  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333; /* Sombra da caixa */
+  width: 100%;
+  padding: 4%;
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
 }
 
-/* Estilos para as informações do Pokémon */
 .pokemon__info {
-  position: absolute; /* Posicionamento absoluto */
-  width: 65%; /* Largura */
-  top: 72%; /* Distância do topo em relação ao viewport */
-  left: 13.5%; /* Distância da esquerda em relação ao viewport */
-  color: #3a444d; /* Cor do texto */
-  font-size: clamp(8px, 5vw, 1rem); /* Tamanho da fonte responsivo */
-  font-weight: 600; /* Peso da fonte */
-  text-align: left; /* Alinhamento do texto à esquerda */
-  margin-top: 10px; /* Espaçamento superior */
+  position: absolute;
+  width: 65%;
+  top: 72%;
+  left: 13.5%;
+  color: #3a444d;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  text-align: left;
+  margin-top: 10px; /* Ajuste o espaço acima da seção de informações */
 }
 
-/* Estilos para os botões de navegação */
 .buttons {
-  position: absolute; /* Posicionamento absoluto */
-  bottom: 10%; /* Distância do fundo em relação ao viewport */
-  left: 50%; /* Alinhamento central */
-  width: 65%; /* Largura */
-  transform: translate(-57%, 0); /* Ajuste de posicionamento */
-  display: flex; /* Layout flexível */
-  gap: 20px; /* Espaço entre os botões */
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 65%;
+  transform: translate(-57%, 0);
+  display: flex;
+  gap: 20px;
 }
 
 .button {
-  width: 50%; /* Largura do botão */
-  padding: 4%; /* Espaçamento interno */
-  border: 2px solid #000; /* Borda sólida */
-  border-radius: 5px; /* Borda arredondada */
-  font-size: clamp(8px, 5vw, 1rem); /* Tamanho da fonte responsivo */
-  font-weight: 600; /* Peso da fonte */
-  color: white; /* Cor do texto */
-  background-color: #444; /* Cor de fundo */
-  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000; /* Sombra da caixa */
+  width: 50%;
+  padding: 4%;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: 600;
+  color: white;
+  background-color: #444;
+  box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
 
 .button:active {
-  box-shadow: inset -4px 4px 0 #222; /* Sombra interna ao clicar */
-  font-size: 0.9rem; /* Tamanho da fonte ao clicar */
+  box-shadow: inset -4px 4px 0 #222;
+  font-size: 0.9rem;
 }
 
-/* Estilos para informações específicas do Pokémon */
-.pokemon__type,
-.pokemon__weight,
-.pokemon__height {
-  margin: 2px 0; /* Margem superior e inferior */
+.pokemon__type, .pokemon__weight, .pokemon__height {
+  margin: 2px 0;
 }
 
 
