@@ -1,107 +1,154 @@
 <!DOCTYPE html>
+
 <html>
 
-<!-- 
-    Este documento HTML é a página inicial de um site chamado "Front End Web 23-1N".
-    Ele inclui links para folhas de estilo CSS, define a viewport para dispositivos móveis,
-    e especifica o conjunto de caracteres como UTF-8 para suportar caracteres especiais.
--->
+<!--Aqui é para conectar com o css, viewport e para chartset="utf-8" sem ele o html não funciona-->
 
 <head>
-    <title>Front End Web 23-1N</title> <!-- Título da página exibido na aba do navegador -->
-    <link rel="stylesheet" href="./css/reset.css"> <!-- Link para o arquivo CSS reset.css -->
-    <link rel="stylesheet" href="./css/index.css"> <!-- Link para o arquivo CSS index.css -->
-    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)"> <!-- CSS específico para dispositivos móveis -->
-    <meta name="viewport" content="width=device-width"> <!-- Configura a viewport para largura do dispositivo -->
-    <meta charset="utf-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+
+    <title>Front End Web 23-1N</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
+
+    <meta charset="utf-8">
+
 </head>
 
 <body>
+    <!--Aqui é para criar o container para colocar os atalhos do conteudo.html, blog.html e contato.html mais a lupinha e o aviso que não coisa no carrinho-->
     <header class="container">
-        <!-- Cabeçalho da página, contendo o logo, mensagem de carrinho vazio e navegação -->
-        <img src="./Imagens/LogoV.png" width="50" height="50"> <!-- Logo do site -->
+        <img src="./Imagens/LogoV.png" width="50" height="50">
 
-        <p class="carrinho"> Nenhum item no carrinho de compras</p> <!-- Mensagem de carrinho vazio -->
+        <p class="carrinho"> Nenhum item no carrinho de compras</p>
         <nav class="menu-opcoes">
-            <!-- Menu de navegação -->
             <ul>
-                <li><a href="conteudo.html">Conteúdo</a></li> <!-- Link para página de conteúdo -->
-                <li><a href="blog.html">Blog</a></li> <!-- Link para página de blog -->
-                <li><a href="contato.html">Contato</a></li> <!-- Link para página de contato -->
+                <li><a href="conteudo.html">Conteúdo</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contato.html">contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="main">
-        <!-- Seção principal, pode ser preenchida dinamicamente com JavaScript -->
-    </section>
-
+    <section id="main"><!--Conteúdo principal--></section>
     <section id="destaques">
-        <!-- Seção de destaques, contendo um formulário de busca e painéis de aulas -->
-        <div class="container destaque">
+        <div class="container destaque"> <!-- os paineis de pastas com aulas -->
+            <!--para tornar a aba de busca funcional-->
             <section class="busca">
-                <!-- Formulário de busca -->
                 <h2>Busca</h2>
                 <form action="http://www.google.com.br/search" id="form-busca">
-                    <input type="search" name="q" id="q"> <!-- Campo de busca -->
-                    <input class="lupa" type="image" src="./Imagens/lupa.png" height="50" width="50"> <!-- Botão de busca -->
+                    <Input type="search" name="q" id="q">
+                    <input class="lupa" type="image" src="./Imagens/lupa.png" height="50" width="50">
+
+
                 </form>
             </section>
+            <!--Criar menus paras as aulas-->
+         
 
-            <!-- Painéis de aulas -->
-            <div class="container paineis">
-                <section class="painel aula1">
-                    <!-- Painel da Aula 8 -->
-                    <h2>Front End Web - Aula 8</h2>
-                    <ol>
-                        <!-- Lista de exercícios -->
-                        <li>
-                            <a href="Estudos/Front End Web - Aula 8.pdf">
-                                <figure>
-                                    <img src="./Imagens/html.png" height="50" width="50">
-                                    <!-- Ícone do exercício -->
-                                </figure>
-                            </a>
-                        </li>
-                        <!-- Adicione mais exercícios aqui -->
-                    </ol>
-                </section>
+            <img class="logoBanner" src="./Imagens/LogoV.png" alt="Imagem de destaque">
+            <a href="#" class="pause">pause</a>
+            <a href="#" class="play">play</a>
 
-                <section class="painel aula2">
-                    <!-- Painel da Aula 14 -->
-                    <h2>Front End Web - Aula 14</h2>
-                    <ol>
-                        <!-- Lista de exercícios -->
-                        <li>
-                            <a href="Estudos/Front End Web - Aula 14 (2).pdf">
-                                <figure>
-                                    <img src="./Imagens/html.png" height="50" width="50">
-                                    <!-- Ícone do exercício -->
-                                </figure>
-                            </a>
-                        </li>
-                        <!-- Adicione mais exercícios aqui -->
-                    </ol>
-                </section>
+        </div>
+        <!--preencher o menu com imagens que levaram para a atividade escrita-->
+        <div class="container paineis">
+            <section class="painel aula1">
+                <h2>Front End Web - Aula 8</h2>
+                <ol>
+                    <!-- primeiro exercicio -->
+                    <li>
+                        <a href="Estudos/Front End Web - Aula 8.pdf">
+                            <figure>
+                                <img src="./Imagens/html.png" height="50" width="50">
+                               
 
-                <!-- Adicione mais painéis de aulas conforme necessário -->
+                            </figure>
+                        </a>
+                    </li>
 
-            </div>
+                    
+                    <!-- coloque mais exercicios aqui! -->
+                </ol>
+            </section>
+            <section class="painel aula2">
+                <h2>Front End Web - Aula 14</h2>
+                <ol> <!-- segundo exercicio -->
+                    <li>
+                        <a href="Estudos/Front End Web - Aula 14 (2).pdf">
+                            <figure>
+                                <img src="./Imagens/html.png" height="50" width="50">
+                                
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- coloque mais exercicios aqui! -->
+                </ol>
+            </section>
+            <section class="painel aula1">
+                <h2>Front End Web - Aula 16</h2>
+                <ol>
+                    <!-- primeiro exercicio -->
+                    <li>
+                        <a href="Estudos/Front End Web - Aula  16 (1).pdf">
+                            <figure>
+                                <img src="./Imagens/html.png" height="50" width="50">
+                                
+
+                            </figure>
+                        </a>
+                    </li>
+
+                    
+                    <!-- coloque mais exercicios aqui! -->
+                </ol>
+            </section>
+
+            <section class="painel aula2">
+                <h2>Front End Web - Aula 17</h2>
+                <ol>
+                    <!-- primeiro exercicio -->
+                    <li>
+                        <a href="Estudos/Front End Web - Aula17 (1).pdf">
+                            <figure>
+                                <img src="./Imagens/html.png" height="50" width="50">
+                               
+
+                            </figure>
+                        </a>
+                    </li>
+
+                    
+                    <!-- coloque mais exercicios aqui! -->
+                </ol>
+            </section>
+
         </div>
     </section>
 
+    <!--Colocar os links nas imagens respectivas de cada rede social-->
     <footer>
-        <!-- Rodapé da página, contendo links para redes sociais -->
         <div class="container">
             <ul class="social">
-                <li><a href="https://github.com/RodrigoFons3ca">Facebook</a></li> <!-- Link para o Facebook -->
-                <li><a href="https://x.com/qu4lqu3r_un?s=09">Twitter</a></li> <!-- Link para o Twitter -->
-                <li><a href="https://www.tiktok.com/@qu4lqu3r_un">Google</a></li> <!-- Link para o Google -->
+                <li>
+                    <a href="https://github.com/RodrigoFons3ca">facebook</a>
+                </li>
+                <li>
+                    <a href="https://x.com/qu4lqu3r_un?s=09">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/@qu4lqu3r_un">google</a>
+                </li>
             </ul>
         </div>
     </footer>
 
-    <script src="Java/index.js"></script> <!-- Link para o arquivo JavaScript index.js -->
+    <script src="Java/index.js"></script>
 </body>
 
 </html>
