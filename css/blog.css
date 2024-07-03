@@ -1,70 +1,85 @@
-
-
-
-header{position: relative;}
-
-.menu-opcoes a { color: #003366; }
-
-body{color: #333333; font-family: "Lucida Sans Unicoe", "Lucida Grande", sans-serif;}
-
-.p1 { border: 1px solid rgb(156, 156, 156); }
-
-.menu-opcoes ul li {display: inline; margin-left: 20px;}
-
-
-
-.container{ margin: 0 auto; width: 940px;}
-
-.menu-opcoes { position: absolute; bottom: 5; right: 0;}
-
-.painel { margin: 10px 0; padding: 10px; width: 35%; }
-
-.aula1 { float: left; background-color: #f5dcdc; }
-
-.aula2 { float: right; background-color: #dcdcf5;}
-
-.painel li { display: inline-block; vertical-align: top; width: 140px; margin: 2px; 
-padding-bottom: 10px; }
-
-.painel h2 { font-size: 24px; font-weight: bold; text-transform: uppercase; margin-bottom: 
-10px; } 
-
-.painel a { color: #333; font-size: 14px; text-align: center; text-decoration: none; }
-
-.busca {
-    background-color: #dcdcdc; font-weight: bold; text-transform: uppercase;
-    margin-right: 10px;width: 230px; float: left; 
-    margin-top: 10px; padding-bottom: 10px;
-    }
-
-.busca h2, .busca form, .menu-conteudo h2 {
-    margin: 10px;
-    }
-
-.menu-conteudo li {
-    background-color: white; margin-bottom: 1px; padding: 5px 10px;
-    }
-
-.menu-conteudo a {
-    color: #333333; text-decoration: none;
-    }
-
-.menu-conteudo { clear: left; }
-
-    
-.busca input { vertical-align: middle;}
-
-.busca input[type=search] { width: 170px;}
-
-
-.destaque { margin-top: 10px; } 
-
-
-
-footer{ 
-    clear: both; 
-    position:relative;
-    background-size: 50%;
-    padding: 20px 0;
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+    margin: 0;
 }
+
+/* Estilos para o container principal */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Largura máxima do container */
+    margin: 20px; /* Margem para espaçamento */
+}
+
+/* Estilos para o título principal */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Estilos para o cabeçalho da tabela */
+thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilos para células de cabeçalho e dados da tabela */
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Efeito de hover nas linhas da tabela */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para ícones dentro da tabela */
+.icon {
+    width: 50px;
+    height: auto;
+}
+
+/* Estilos para links */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Estilos para links em hover */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para tornar responsivo */
+@media screen and (max-width: 768px) {
+    /* Ajuste para telas menores que 768px de largura */
+    .container {
+        padding: 10px; /* Reduz o padding */
+        margin: 10px; /* Reduz a margem */
+    }
+
+    /* Ajuste para tabelas em telas menores */
+    table {
+        font-size: 14px; /* Reduz o tamanho da fonte da tabela */
+    }
+}
+
 

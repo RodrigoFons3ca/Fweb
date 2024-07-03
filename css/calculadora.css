@@ -1,47 +1,62 @@
-*{
+/* Reset de margens e paddings para todos os elementos */
+* {
     margin: 0;
     padding: 0;
 }
 
-.fundo{
+/* Estilos para o fundo da página */
+.fundo {
     background-image: linear-gradient(45deg, black, purple);
-    height: 100vh;
-    color: white;
+    height: 100vh; /* Altura total da viewport */
+    color: white; /* Cor do texto */
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    text-align: center; /* Centraliza o conteúdo */
 }
 
-.calculadora{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15PX;
-    padding: 15px;
+/* Estilos para a calculadora */
+.calculadora {
+    position: absolute; /* Posicionamento absoluto */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    top: 50%; /* Posiciona no centro verticalmente */
+    left: 50%; /* Posiciona no centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza completamente */
+    border-radius: 15px; /* Cantos arredondados */
+    padding: 15px; /* Espaçamento interno */
+    max-width: 300px; /* Largura máxima */
+    width: 90%; /* Largura adaptável */
 }
 
-.botao{
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    cursor: pointer;
-    background-color: rgb(31, 31, 31);
-    border: none;
-    color: white;
-    margin: 3px;
+/* Estilos para os botões da calculadora */
+.botao {
+    width: 50px; /* Largura fixa */
+    height: 50px; /* Altura fixa */
+    font-size: 25px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor do mouse */
+    background-color: rgb(31, 31, 31); /* Cor de fundo */
+    border: none; /* Sem borda */
+    color: white; /* Cor do texto */
+    margin: 3px; /* Margem entre os botões */
 }
 
-.bota:hover{
-    background-color: black;
+.botao:hover {
+    background-color: black; /* Cor de fundo ao passar o mouse */
 }
 
-#resultado{
-    width: 217px;
-    background-color: white;
-    height: 30px;
-    margin: 5px;
-    font-size: 25px;
-    color: black;
-    text-align: right;
+/* Estilos para a área de resultado da calculadora */
+#resultado {
+    width: 100%; /* Largura total */
+    background-color: white; /* Fundo branco */
+    height: 50px; /* Altura */
+    margin: 10px 0; /* Margem superior e inferior */
+    font-size: 25px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+    text-align: right; /* Alinhamento à direita */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Media query para responsividade */
+@media screen and (max-width: 768px) {
+    .calculadora {
+        max-width: 90%; /* Reduz a largura máxima */
+    }
 }

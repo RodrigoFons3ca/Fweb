@@ -1,43 +1,71 @@
-
+/* Reset de margens e paddings para todos os elementos */
 body {
-    background-color: #747474;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Estilos para o cartão de visita */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%; /* Largura adaptável */
+  margin: 20px; /* Espaçamento externo */
+}
+
+/* Estilos para a foto de perfil */
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Estilos para o título principal */
+h1 {
+  margin: 20px 0 10px; /* Espaçamento superior, inferior e inferior */
+  font-size: 24px;
+  color: #333;
+}
+
+/* Estilos para o subtítulo */
+.title {
+  color: #555;
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilos para as informações de contato */
+.contact-info p {
+  margin: 10px 0; /* Espaçamento superior e inferior */
+}
+
+/* Estilos para links de contato */
+.contact-info a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+/* Estilo de hover para links de contato */
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Media query para responsividade */
+@media screen and (max-width: 600px) {
+  .card {
+    max-width: 90%; /* Reduz a largura máxima */
   }
-  
-  h1 {
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  p {
-    font-family: #ffffff;
-    font-size: 20px;
-  }
-  
-  body {
-   
-    background-image: url(../Imagens/sukunaL.jpg);
-    background-repeat: no-repeat no-repeat;
-  
-  background-position: 45% -400%;
- 
-    text-shadow: rgb(0, 0, 0) 0px 0px 2px;
-    font-size: 16px;
-    background-size: 500px;
-    
-     }
+}
 
-     #Diferenciais{  
-      background-color: lightblue;
-      color: black;
-      padding: 40px;
-      text-align: center;}
 
-      p:first-letter { font-weight: bold; }
-
-      h1 + p { text-indent: 0;}
-
-      h1 + p { text-indent: 0;}
-
-      :not(p) + p:first-line { font-variant: small-caps; }
+      
 
       

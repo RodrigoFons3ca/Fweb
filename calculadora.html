@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/calculadora.css" />
-    <title>Calculadora</title>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport para dispositivos móveis -->
+    <link rel="stylesheet" href="css/calculadora.css" /> <!-- Link para o arquivo CSS externo para estilizar a calculadora -->
+    <title>Calculadora</title> <!-- Título da página exibido na aba do navegador -->
 </head>
 <body>
-    <div class="fundo">
-        <h1>Calculadora bolada</h1>
-        <div class="calculadora">
-            <h1>Calculadora</h1>
-            <p id="resultado">
-                <table>
-                    <tr>
-                        <td><button class="botao" onclick="limpar()">C</button></td>
-                        <td><button class="botao" onclick="apagar()"><</button></td>
-                        <td><button class="botao" onclick="insert('/')">/</button></td>
-                        <td><button class="botao" onclick="insert('*')">x</button></td>
+    <div class="fundo"> <!-- Div que envolve todo o conteúdo da calculadora -->
+        <h1>Calculadora bolada</h1> <!-- Título principal da calculadora -->
+        <div class="calculadora"> <!-- Div que contém a calculadora -->
+            <h1>Calculadora</h1> <!-- Título secundário da calculadora -->
+            <p id="resultado"> <!-- Parágrafo onde será exibido o resultado da calculadora -->
+                <table> <!-- Tabela que contém os botões da calculadora -->
+                    <tr> <!-- Primeira linha da tabela -->
+                        <td><button class="botao" onclick="limpar()">C</button></td> <!-- Botão para limpar a calculadora -->
+                        <td><button class="botao" onclick="apagar()"><</button></td> <!-- Botão para apagar o último caractere -->
+                        <td><button class="botao" onclick="insert('/')">/</button></td> <!-- Botão para inserir o operador de divisão -->
+                        <td><button class="botao" onclick="insert('*')">x</button></td> <!-- Botão para inserir o operador de multiplicação -->
                     </tr>
-                    <tr>
-                        <td><button class="botao" onclick="insert('7')">7</button></td>
-                        <td><button class="botao" onclick="insert('8')">8</button></td>
-                        <td><button class="botao" onclick="insert('9')">9</button></td>
-                        <td><button class="botao" onclick="insert('-')">-</button></td>
+                    <tr> <!-- Segunda linha da tabela -->
+                        <td><button class="botao" onclick="insert('7')">7</button></td> <!-- Botão para inserir o número 7 -->
+                        <td><button class="botao" onclick="insert('8')">8</button></td> <!-- Botão para inserir o número 8 -->
+                        <td><button class="botao" onclick="insert('9')">9</button></td> <!-- Botão para inserir o número 9 -->
+                        <td><button class="botao" onclick="insert('-')">-</button></td> <!-- Botão para inserir o operador de subtração -->
                     </tr>
-                    <tr>
-                        <td><button class="botao" onclick="insert('4')">4</button></td>
-                        <td><button class="botao" onclick="insert('5')">5</button></td>
-                        <td><button class="botao" onclick="insert('6')">6</button></td>
-                        <td><button class="botao" onclick="insert('+')">+</button></td>
+                    <tr> <!-- Terceira linha da tabela -->
+                        <td><button class="botao" onclick="insert('4')">4</button></td> <!-- Botão para inserir o número 4 -->
+                        <td><button class="botao" onclick="insert('5')">5</button></td> <!-- Botão para inserir o número 5 -->
+                        <td><button class="botao" onclick="insert('6')">6</button></td> <!-- Botão para inserir o número 6 -->
+                        <td><button class="botao" onclick="insert('+')">+</button></td> <!-- Botão para inserir o operador de adição -->
                     </tr>
-                    <tr>
-                        <td><button class="botao" onclick="insert('1')">1</button></td>
-                        <td><button class="botao" onclick="insert('2')">2</button></td>
-                        <td><button class="botao" onclick="insert('3')">3</button></td>
-                        <td rowspan="2"><button  class="botao" style="height: 106px" onclick="calcular()">=</button></td>
+                    <tr> <!-- Quarta linha da tabela -->
+                        <td><button class="botao" onclick="insert('1')">1</button></td> <!-- Botão para inserir o número 1 -->
+                        <td><button class="botao" onclick="insert('2')">2</button></td> <!-- Botão para inserir o número 2 -->
+                        <td><button class="botao" onclick="insert('3')">3</button></td> <!-- Botão para inserir o número 3 -->
+                        <td rowspan="2"><button class="botao" style="height: 106px" onclick="calcular()">=</button></td> <!-- Botão de igual para calcular o resultado -->
                     </tr>
-                    <tr>
-                        <td   colspan="2"><button class="botao" style="width: 106px" onclick="insert('0')">0</button></td>
-                        <td><button class="botao" onclick="insert('.')">.</button></td>
-                        
+                    <tr> <!-- Quinta linha da tabela -->
+                        <td colspan="2"><button class="botao" style="width: 106px" onclick="insert('0')">0</button></td> <!-- Botão para inserir o número 0 -->
+                        <td><button class="botao" onclick="insert('.')">.</button></td> <!-- Botão para inserir o ponto decimal -->
                     </tr>
                 </table>
             </p>
         </div>
     </div>
-    <script type="text/javascript" src="Java/calculadora.js"></script>
+    <script type="text/javascript" src="Java/calculadora.js"></script> <!-- Script JavaScript externo para a lógica da calculadora -->
 </body>
 </html>

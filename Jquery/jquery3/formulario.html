@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    <form id="contact-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <script>
+        $(document).ready(function() {
+            $("#contact-form").validate({
+                rules: {
+                    nome: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    mensagem: "required"
+                },
+                messages: {
+                    nome: "Por favor, insira seu nome",
+                    email: {
+                        required: "Por favor, insira seu email",
+                        email: "Por favor, insira um email válido"
+                    },
+                    mensagem: "Por favor, insira sua mensagem"
+                },
+                submitHandler: function(form) {
+                    alert("Formulário enviado com sucesso!");
+                    form.submit();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

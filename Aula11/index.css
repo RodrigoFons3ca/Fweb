@@ -1,0 +1,13 @@
+body{background-color: #66ffcc;}
+
+@media screen and (min-width: 480px) and (max-width: 768px){body{background-color: #00FF33;}}
+
+@media screen and (min-width: 768px) and (max-width: 956px){body{background-color: #5b517c;}}
+
+@media screen and (min-width: 956px) and (max-width: 1144px){body{background-color: #ff0000;}}
+
+@media screen and (min-width: 1144px) and (max-width:1332px){body{background-color: #ffee00;}}
+
+body{
+    background-image: ./image;
+}

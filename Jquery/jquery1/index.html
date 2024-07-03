@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Lista de Usuários</h1>
+    <table id="usuarios-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>CPF</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        $(document).ready(function() {
+            $.getJSON('data.json', function(data) {
+                var usuarios = data.usuarios;
+                var tbody = $('#usuarios-table tbody');
+                usuarios.forEach(function(usuario) {
+                    var row = `<tr>
+                        <td>${usuario.nome}</td>
+                        <td>${usuario.idade}</td>
+                        <td>${usuario.cpf}</td>
+                        <td>${usuario.telefone}</td>
+                    </tr>`;
+                    tbody.append(row);
+                });
+            }).fail(function() {
+                console.log("Erro ao carregar o arquivo JSON.");
+            });
+        });
+    </script>
+</body>
+</html>
+

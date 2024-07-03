@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links -->
+  <link rel="icon" href="./favicons/favicon-16x16.png"> <!-- Ícone da página -->
+  <link rel="stylesheet" href="./css/style.css"> <!-- Folha de estilo principal -->
+
+  <!-- Main JS -->
+  <script defer src="./js/script.js"></script> <!-- Script JavaScript principal (deferred) -->
+
+  <title>Pokédex</title> <!-- Título da página -->
+</head>
+<body>
+  
+  <main>
+    <img src="#" alt="pokemon" class="pokemon__image"> <!-- Imagem do Pokémon (a ser preenchida dinamicamente) -->
+
+    <h1 class="pokemon__data">
+      <span class="pokemon__number"></span> - <!-- Número do Pokémon (a ser preenchido dinamicamente) -->
+      <span class="pokemon__name"></span> <!-- Nome do Pokémon (a ser preenchido dinamicamente) -->
+    </h1>
+
+    <form class="form">
+      <input
+        type="search"
+        class="input__search"
+        placeholder="Name or Number"
+        required
+      /> <!-- Campo de busca para procurar Pokémon por nome ou número -->
+    </form>
+
+    <div class="pokemon__info">
+      <p class="pokemon__type"></p> <!-- Tipo do Pokémon (a ser preenchido dinamicamente) -->
+      <p class="pokemon__weight"></p> <!-- Peso do Pokémon (a ser preenchido dinamicamente) -->
+      <p class="pokemon__height"></p> <!-- Altura do Pokémon (a ser preenchida dinamicamente) -->
+    </div>
+
+    <div class="buttons">
+      <button class="button btn-prev">Prev &lt;</button> <!-- Botão para Pokémon anterior -->
+      <button class="button btn-next">Next &gt;</button> <!-- Botão para próximo Pokémon -->
+    </div>
+
+    <img src="./images/pokedex.png" alt="pokedex" class="pokedex"> <!-- Imagem da Pokédex -->
+    <audio class="pokemon__audio" hidden></audio> <!-- Áudio do Pokémon (oculto) -->
+  </main>
+
+</body>
+</html>

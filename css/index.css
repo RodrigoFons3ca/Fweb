@@ -1,214 +1,215 @@
-.carrinho{
+/* Reset de margens, paddings e fonte para todo o corpo */
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative; /* Adiciona posição relativa para conter elementos absolutos */
+}
+
+/* Estilos para o carrinho */
+.carrinho {
     background: url("../Imagens/carrinhoJ.jpg") no-repeat top right;
     background-size: contain;
     font-size: 14px;
-    padding-right: 35px; 
-    text-align: right; 
+    padding-right: 35px;
+    text-align: right;
     width: 140px;
-   position:absolute;
-   top: 0;
-   right: 0;
-
-    }
-
-
-header{
-position: relative;
+    position: absolute;
+    top: 10px; /* Ajusta posição para ficar abaixo do cabeçalho */
+    right: 10px; /* Ajusta posição para ficar à direita */
 }
 
-.menu-opcoes a { 
-color: #003366; 
-}
-
-body{
-color: #333333; 
-font-family: "Lucida Sans Unicoe", "Lucida Grande", sans-serif;
-}
-
-.p1 { 
-border: 1px solid rgb(156, 156, 156);
-}
-
-.menu-opcoes ul li {
-display: inline; 
-margin-left: 20px;
-}
-
-
-
-.container{ 
-margin: 0 auto; 
-width: 940px; 
-}
-
-.menu-opcoes { 
-position: absolute; 
-bottom: 5; 
-right: 0;
-}
-
-.painel { 
-margin: 10px 0;
-padding: 10px;
-width: 35%;  
-height: 200px;
-}
-
-.aula1 { 
-float: left; 
-background-color: #f5dcdc; 
-border-radius: 4px;
-box-shadow: 1px 1px 4px #999;
-box-shadow: inset 1px 1px 4px #999;
-background: linear-gradient(#f5dcdc, #bebef4);
-}
-
-.aula2 { 
-float: right;
-background-color: #dcdcf5;
-border-radius: 4px;
-box-shadow: 1px 1px 4px #999;
-box-shadow: inset 1px 1px 4px #999;
-background: linear-gradient(#dcdcf5, #f4bebe);
-}
-
-.painel li { display: inline-block; 
-vertical-align: top; 
-width: 140px; margin: 2px; 
-padding-bottom: 10px; 
-text-shadow: 3px 3px 2px #FFF;
-
-}
-
-.painel li:hover{
-    box-shadow: 0 0 5px #333; 
-transition: box-shadow 0.7s; 
-background-color: rgba(255,255,255,0.8);  
-transition:
-0.7s;
-transform: scale(1.2) rotate(-5deg);
-}
-
-.painel h2 { font-size: 24px; 
-font-weight: bold;
-text-transform: uppercase;
-margin-bottom: 10px; 
-text-shadow: 3px 3px 2px #FFF; 
-text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
-} 
-
-.painel a { 
-color: #333;
-font-size: 14px;
-text-align: center;
-text-decoration: none;
-}
-
-.busca, .menu-conteudo {
-    background-color: #dcdcdc; 
-    font-weight: bold; 
-    text-transform: uppercase;
-    margin-right: 10px;width: 230px;
-    float: left; 
-    margin-top: 10px; 
-    padding-bottom: 10px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    }
-
-.busca h2, .busca form, .menu-conteudo h2 {
-    margin: 10px;
-    }
-
-.menu-conteudo li {
-    background-color: white; 
-    margin-bottom: 1px; 
-    padding: 5px 10px;
-    }
-
-.menu-conteudo a {
-    color: #333333; 
-    text-decoration: none;
-    }
-
-.menu-conteudo { 
-    clear: left; 
-}
-
-    
-.busca input { 
-    vertical-align: middle;
-}
-
-.busca input[type=search] {
-     width: 170px;
-    }
-
-
-.destaque { 
-    margin-top: 10px;
- } 
-
-.lupa{
-    width: 20x;
-}
-
-footer {  
-    background: linear-gradient(#f5dcdc, #bebef4);
-    border-radius: 4px; 
-    box-shadow: inset 1px 1px 4px #999;
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
-    background-size: 50%;
-    clear: both;
-    padding: 20px 0;
-    height: 50px;
-}
-.social a {    /* tamanho da imagem */
-    height: 32px;
-    width: 32px;
-    /* image replacement */
-    display: block;
-    text-indent: -9999px;
-}
-.social a[href*="facebook.com"] {    background-image: url(../Imagens/face.png);
-    background-size: contain;
-}
-.social a[href*="twitter.com"] {    background-image: url(../Imagens/twitter.png);
-    background-size: contain;
-}
-.social a[href*="plus.google.com"] {    background-image: url(../Imagens/Google.png);
-    background-size: contain;
-}   
-footer .container {    position: relative;}
-
-.social {    position: absolute;
-    top: 12px;
+/* Estilos para o menu de opções */
+.menu-opcoes {
+    position: absolute;
+    bottom: 5px;
     right: 0;
 }
-.social li {    float: left;
-    margin-left: 25px;
-}
-.img-footer{    height: 50px;
-    width: 50px;
+
+/* Estilos para links do menu de opções */
+.menu-opcoes a {
+    color: #003366;
+    text-decoration: none;
 }
 
-
-.logoBanner{
-    width: 30%;
-    height: 200px;
+/* Estilos para o corpo da página */
+.container {
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    width: 100%; /* Ajusta para ocupar toda a largura disponível */
+    max-width: 940px; /* Define largura máxima para evitar que o conteúdo se estenda demais */
 }
-    
-.menu-opcoes a:hover { color: #007dc6;} .menu-opcoes a:active { color: 
-    #867dc6; }
 
-    .menu-conteudo li ul {
-        display: none; /*por padrão escondida*/
-       } 
-       .menu-conteudo li:hover ul {
-       display: block; /*no mouse aparece*/
-       } 
-       .menu-conteudo ul ul li {
-        background-color: #dcdcdc;
-        }
-    
-        .menu-conteudo li li a:before {content: '- ';}
+/* Estilos para os painéis de aula */
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%; /* Ajusta largura para ocupar toda a largura disponível */
+    height: auto; /* Ajusta altura automática para conteúdo variável */
+    float: none; /* Remove flutuação para permitir layout flexível */
+}
+
+/* Estilos específicos para cada tipo de aula */
+.aula1 {
+    background-color: #f5dcdc;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+    background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.aula2 {
+    background-color: #dcdcf5;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+    background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+/* Estilos para itens dentro dos painéis */
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.33% - 10px); /* Calcula largura para exibir 3 colunas com margens */
+    margin: 2px;
+    padding-bottom: 10px;
+    text-shadow: 3px 3px 2px #FFF;
+}
+
+/* Estilos para itens da lista ao passar o mouse */
+.painel li:hover {
+    box-shadow: 0 0 5px #333;
+    transition: box-shadow 0.7s;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05) rotate(-2deg); /* Ajusta escala e rotação ao passar o mouse */
+}
+
+/* Estilos para títulos dos painéis */
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos para links dentro dos painéis */
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Estilos para a seção de busca e menu de conteúdo */
+.busca, .menu-conteudo {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%; /* Ajusta largura para ocupar toda a largura disponível */
+    float: none; /* Remove flutuação para permitir layout flexível */
+    margin: 10px 0; /* Ajusta margem para espaçamento */
+    padding: 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* Estilos para elementos dentro de busca e menu de conteúdo */
+.busca h2, .busca form, .menu-conteudo h2 {
+    margin: 10px;
+}
+
+.menu-conteudo li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-conteudo a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu-conteudo {
+    clear: left;
+}
+
+/* Estilos para o campo de busca */
+.busca input[type=search] {
+    width: 80%; /* Ajusta largura do campo de busca */
+    margin-right: 10px; /* Ajusta margem direita */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: linear-gradient(#f5dcdc, #bebef4);
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px #999;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+    position: relative; /* Adiciona posição relativa para conter elementos absolutos */
+}
+
+/* Estilos para ícones das redes sociais no rodapé */
+.social a {
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+    float: left; /* Ajusta flutuação para alinhar horizontalmente */
+    margin-left: 10px; /* Ajusta margem esquerda */
+}
+
+/* Estilos para imagens das redes sociais no rodapé */
+.social a[href*="https://github.com/RodrigoFons3ca"] {
+    background-image: url(../Imagens/github.png);
+    background-size: contain;
+}
+
+.social a[href*="https://x.com/qu4lqu3r_un?s=09"] {
+    background-image: url(../Imagens/twitter.png);
+    background-size: contain;
+}
+
+.social a[href*="https://www.tiktok.com/@qu4lqu3r_un"] {
+    background-image: url(../Imagens/tiktok.png);
+    background-size: contain;
+}
+
+/* Estilos para container no rodapé */
+footer .container {
+    position: relative;
+}
+
+/* Estilos para itens do menu de conteúdo aninhados */
+.menu-conteudo li li a:before {
+    content: '- '; /* Adiciona marcador antes dos itens */
+}
+
+/* Media query para responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Ajusta largura máxima para ocupar toda a largura disponível */
+    }
+
+    .painel {
+        width: 100%; /* Ajusta largura para ocupar toda a largura disponível */
+    }
+
+    .busca input[type=search] {
+        width: 100%; /* Ajusta largura do campo de busca para ocupar toda a largura disponível */
+        margin-right: 0; /* Remove margem direita */
+    }
+
+    .social a {
+        margin-left: 5px; /* Ajusta margem esquerda menor para alinhamento em telas menores */
+    }
+}
